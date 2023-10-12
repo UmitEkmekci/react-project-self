@@ -1,0 +1,29 @@
+/* Genel liste stilini tanımlar */
+.ul-list {
+    list-style-type: none; /* liste öğelerinin önündeki işareti kaldırır */
+    padding: 0; /* iç boşluğu sıfırlar */
+    margin: 0; /* dış boşluğu sıfırlar */
+}
+
+/* Filtre sonuç konteynerini tanımlar */
+.ulcontainer {
+    border: 1px solid #e0e0e0; /* ince, gri bir kenarlık ekler */
+    margin-bottom: 10px; /* alt boşluğu ayarlar */
+    padding: 10px; /* içerik ve kenarlık arasında bir boşluk ekler */
+    border-radius: 8px; /* köşeleri yuvarlar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* hafif bir gölge ekler */
+    transition: all 0.3s; /* animasyon geçişi için */
+}
+
+/* ulcontainer'a fareyle tıklandığında uygulanan stil */
+.ulcontainer:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* gölgeyi arttırır */
+    transform: translateY(-2px); /* hafifçe yukarı kaldırır */
+    background-color: aquamarine;
+}
+
+/* Her bir liste öğesinin stilini tanımlar */
+.ul-list .ulcontainer li {
+    margin-bottom: 5px; /* liste öğeleri arasında boşluk ekler */
+    font-size: 16px; /* yazı boyutunu ayarlar */
+}

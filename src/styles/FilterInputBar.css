@@ -1,0 +1,52 @@
+/* Ana konteyner için genel stil */
+.container {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Arama bölümü için stil */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Sonuçlar bölümü için stil */
+.results-section {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+/* Search input için stil */
+.textinput {
+    flex: 1; /* tüm mevcut alanı kaplar */
+    padding: 10px 15px; /* iç boşluk ekler */
+    font-size: 18px; /* yazı boyutunu büyütür */
+    border: 1px solid #ddd; /* kenarlık ekler */
+    border-radius: 5px; /* köşeleri yuvarlar */
+    margin-right: 10px; /* sağ boşluk ekler */
+}
+
+/* Search butonu için stil */
+.searchbutton {
+    padding: 10px 15px; /* iç boşluk ekler */
+    font-size: 8px; /* yazı boyutunu büyütür */
+    text-align: center;
+    background-color: #4CAF50; /* arkaplan rengi */
+    color: white; /* yazı rengi */
+    border: none; /* kenarlık kaldırılır */
+    border-radius: 5px; /* köşeleri yuvarlar */
+    cursor: pointer; /* imleç ekler */
+    display: flex; /* içerikleri yanyana getirir */
+    align-items: center; /* içerikleri merkeze yerleştirir */
+    height: 40px;
+    width: 60px;
+}
+
+/* Search butonu üzerine gelindiğinde stil */
+.searchbutton:hover {
+    background-color: #45a049; /* arkaplan rengini biraz koyulaştırır */
+}

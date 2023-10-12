@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# TodoList Application with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to the TodoList Application built with React! This application is designed to offer a seamless user experience for task management. With a sleek interface and intuitive functionality, users can effortlessly create, update, delete, and search tasks. This application was based on Javascript ES6 and React props and hook of state.
 
-In the project directory, you can run:
+## Main Features
 
-### `npm start`
+### App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The heart of the application. The `App` component serves as the central hub, integrating all the other components. It maintains the core state of the application, handling operations like task addition and deletion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### TaskCreate
 
-### `npm test`
+An interactive component designed for users to add new tasks. It ensures that users provide valid input through its built-in validation mechanisms, ensuring the integrity of the task list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### TaskList
 
-### `npm run build`
+A visual representation of all tasks. This component fetches data from the main state and renders each task using the `EachTask` component, providing a clear and concise view of all tasks.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### EachTask
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A component dedicated to individual task management. Users can easily view task details, update its content, or remove it entirely. During updates, the display conveniently switches to input fields for user modifications.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### FilterInputBar
 
-### `npm run eject`
+A powerful search functionality that enables users to swiftly find tasks based on keywords. The component enhances user experience by displaying a loading state with the `LoadingPage` component while fetching results, ensuring users are always informed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### LoadingPage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A minimalist component designed to inform users when the application is processing data, especially during search operations. It displays a straightforward "Loading..." message.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### FilterOutputList
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+After users initiate a search via the `FilterInputBar`, this component jumps into action, showcasing the search results. It provides a summary of the number of items found and lists the tasks that match the search criteria, ensuring users can quickly find what they're looking for.
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone & Setup**: Start by cloning this repository to your local machine. Once done, navigate to the project directory.
+2. **Install Dependencies**: Run `npm install` to fetch and install all the necessary dependencies required for the application to function smoothly.
+3. **Launch the App**: Kickstart the development server by running `npm start`.
+4. **Access the App**: Open your favorite browser and visit `http://localhost:3000` to dive into the TodoList Application!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## User Guide
 
-### Code Splitting
+1. **Task Creation**: Navigate to the `TaskCreate` section. Input a title and a task description. Hit the "Add" button or simply press Enter to add the task to the list.
+2. **Task Management**: In the `TaskList`, click on the "Update" button beside a task to modify its details. After making your changes, click the save icon. To remove a task, click the "Delete" button.
+3. **Swift Search**: Use the `FilterInputBar` to type in a keyword. Press the "SEARCH" button or Enter to initiate the search. The `FilterOutputList` will display the results below.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribution & Feedback
 
-### Analyzing the Bundle Size
+Your feedback is invaluable! Feel free to fork this repository, introduce your changes, and submit pull requests. Any feedback, suggestions, or bug reports are highly appreciated. Together, we can make this application even better!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

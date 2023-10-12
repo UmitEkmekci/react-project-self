@@ -1,0 +1,78 @@
+/* Input alanını tam ekran yapar */
+.input-title {
+    width: 70%;
+    padding: 10px 15px; /* iç boşluk */
+    font-size: 15px; /* yazı boyutu */
+    border: 1px solid #ddd; /* kenarlık */
+    margin-bottom: 10px; /* alt marj */
+}
+
+/* Textarea alanını tam ekran yapar ve yüksekliğini arttırır */
+.input-task{
+    width: 70%;
+    height: 100px; /* yükseklik */
+    padding: 10px 15px; /* iç boşluk */
+    font-size: 12px; /* yazı boyutu */
+    border: 1px solid #ddd; /* kenarlık */
+    margin-bottom: 10px; /* alt marj */
+}
+
+/* Save Update butonunu estetikleştirir */
+.button-saveupdate {
+    width: 50%;
+    padding: 10px 15px; /* iç boşluk */
+    font-size: 14px; /* yazı boyutu */
+    color: black; /* yazı rengi */
+    border: none; /* kenarlık */
+    cursor: pointer; /* imleç */
+    margin-bottom: 10px;
+}
+
+/* Save Update butonuna hover (üzerine gelme) durumunda stil uygular */
+.button-saveupdate:hover {
+    background-color: yellow; /* arkaplan rengi */
+}
+
+
+.card-container {
+    border: 1px solid black; /* Sadece görsel amaçlı. */
+    padding: 16px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.item {
+    border: 0.2px solid black;
+    margin-bottom: 10px;
+    background-color:lightgreen;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    
+}
+
+.buttons {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+
+.button-delete:hover {
+    background-color: red;
+    border-radius: 25%;
+}
+
+
+.button-update:hover {
+    background-color:yellow;
+    border-radius: 25%;
+}

@@ -1,0 +1,39 @@
+.task-form {
+    display: flex;          /* Flexbox'u aktif hale getir */
+    flex-direction: column; /* Çocukları dikey bir sütunda sırala */
+    align-items: center;    /* Çocukları yatayda merkeze hizala */
+    gap: 20px;              /* Çocuklar arasında boşluk oluştur */
+    background-color: #f5f5f5;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.task-form label {
+    font-weight: bold; /* Etiket yazısını kalın yap */
+    max-width: 500px; /* Etiket genişliğini en fazla 500px olacak şekilde sınırla */
+    text-align: center; /* Etiket içerisindeki yazıları merkeze hizala */
+    margin: 0 auto; /* Etiketleri yatay olarak merkeze al */
+    
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-form button {
+    padding: 10px 15px;
+    background-color: whitesmoke; /* Örnek yeşil renk */
+    color: black; /* Yazı rengi beyaz */
+    border: none; /* Kenarlığı kaldır */
+    border-radius: 5px; 
+    cursor: pointer; /* Fare ile üzerine gelindiğinde el işareti olsun */
+}
+
+.task-form button:hover {
+    background-color: green /* Mouse üzerindeyken renk değişikliği */
+}
