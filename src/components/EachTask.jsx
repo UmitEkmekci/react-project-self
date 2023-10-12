@@ -34,7 +34,7 @@ const EachTask = ({ List, handleDeleteButton, handleSaveUpdateButton, updateStat
                             <div>Task: {List.task}</div>
                             <div className='buttons'>
                                 <button className='button-delete' onClick={() => handleDeleteButton(List.id)}>Delete</button>
-                                <button className='button-update' onClick={() => setUpdateStatus(true)}>Update</button>
+                                <button className='button-update' onClick={() => setUpdateStatus(true)}>UpdateAnan</button>
                             </div>
                         </div >
                     </>
